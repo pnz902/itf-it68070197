@@ -31,7 +31,13 @@ nav {
 
 #splitside {
     display: flex;
+    /* justify-content: space-between; */
+}
+
+#Overview {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .Information {
@@ -43,12 +49,14 @@ nav {
 }
 
 #account {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
-#cash {
+#inputbalance {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
 
 .operation {
@@ -56,6 +64,10 @@ nav {
 }
 
 .textTools {
+    display: flex;
+}
+
+#tools {
     display: flex;
 }
 
