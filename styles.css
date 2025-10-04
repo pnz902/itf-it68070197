@@ -1,5 +1,10 @@
+body {
+font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
 nav {
-    background-color: lemonchiffon;
+    background-color: #8cc7de;
     display: flex;
     justify-content: space-between;
     align-items: center;
