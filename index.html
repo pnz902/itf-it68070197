@@ -24,41 +24,35 @@
     </div>
     <div class="bank">
         <hr>
-        <div class="result">
-            result()
+        <div id="result">
+            
         </div>
         <div id="splitside">
             <div>
-                <h3>Account Overview</h3>
+                <h2>Account Overview</h2>
                 <div class="Information">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKIGkR0NAsKhA679VI-_AHno_N3kOZwDEDErKUvypLVOHeDP4mSJAL1BjcGdpQUT3entVehgWv5XUgqmaCT0Bk6JAxMC0KLDQ8ro14IqpaQVGADgeXzmKsvaKYorWY3JtENTkKNC1xaoD4/s800/business_woman1_1_smile.png" width="130" alt="person">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKIGkR0NAsKhA679VI-_AHno_N3kOZwDEDErKUvypLVOHeDP4mSJAL1BjcGdpQUT3entVehgWv5XUgqmaCT0Bk6JAxMC0KLDQ8ro14IqpaQVGADgeXzmKsvaKYorWY3JtENTkKNC1xaoD4/s800/business_woman1_1_smile.png" width="120" alt="person">
                     <div id="textinform">
-                        <h4>Account Information</h4>
+                        <h3>Account Information</h3>
                         Name: Ananya Yongda <br>
                         Type: Saving Account
                     </div>
                 </div>
                 <div class="balance">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo5bBmkTsI2v8TNQbb4_Z9iSWzDpHPZJjw_-tJs4zFrcmG-5lkLiuPoP1eievQ-vl9wyiD1cYGO2PFdcpbA-29q1wzJbyNmEACkAFI1eHxWIQnxGahJqv1nKMRl5Y9RdI-uVXBqUbYkPN1/s400/money_saifu_woman.png" width="130" alt="bankbalance">
+                    <div id="balancepic">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo5bBmkTsI2v8TNQbb4_Z9iSWzDpHPZJjw_-tJs4zFrcmG-5lkLiuPoP1eievQ-vl9wyiD1cYGO2PFdcpbA-29q1wzJbyNmEACkAFI1eHxWIQnxGahJqv1nKMRl5Y9RdI-uVXBqUbYkPN1/s400/money_saifu_woman.png" height="150" width="120" alt="bankbalance">
+                    </div>
                     <div id="textbalance">
                         <h3>Balance Information</h3>
-                        <div id="account">
-                            <div>
-                                Current account <br>
-                                Balance: <br>
-                                Current cash <br>
-                                Balance: <br>
-                            </div>
-                            <div>
-                                <input type="number" id="account" value="0"><br>
-                                <input type="number" id="cash" value="0"><br>
-                            </div>
-                        </div>
-                        <button onclick="balance()">Change</button>
+                        Current account <input type="number" id="account" value="0"><br>
+                        Balance: <br>
+                        Current cash <input type="number" id="cash" value="0"><br>
+                        Balance: <br>
+                        <button onclick="change()">Change</button>
                     </div>
                 </div>
                 <div class="operation">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5aammkcJH67YB6Q1wUTxsaR9rPQ-GODVOJ3ekja8sEOvVe60xJ981bKVyJNmU7QG1Ez7M6mV5KhnXpURXnvq4GyTJPj8XBAGzsUSlcZJMAJrErdXqodhBjAOdfXeQFmuO6N7rkhF5kB6l/s400/money_saifu_kara_woman.png" width="130" alt="bankoperate">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5aammkcJH67YB6Q1wUTxsaR9rPQ-GODVOJ3ekja8sEOvVe60xJ981bKVyJNmU7QG1Ez7M6mV5KhnXpURXnvq4GyTJPj8XBAGzsUSlcZJMAJrErdXqodhBjAOdfXeQFmuO6N7rkhF5kB6l/s400/money_saifu_kara_woman.png" width="120" alt="bankoperate">
                     <div id="textoperation">
                         <h3>Bank Operation</h3>
                         <label for="bank-operation"></label>
@@ -66,33 +60,26 @@
                             <option value="Deposit">Deposit</option>
                             <option value="Withdraw">Withdraw</option>
                         </select>
-                        <input type="number" id="money" value="0">
+                        <input type="number" id="money" value="0"><br>
+                        <button onclick="showresult()">Proceed</button>
                     </div>
                 </div>
             </div>
             <div>
-                <h3>Financial Tools</h3>
+                <h2>Financial Tools</h2>
                 <div class="textTools">
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9GySEgjFM17HqeSZ1x2yJ1YtuhgeBicuB9gOg3pt1W146NSd_qq0XNgWr36RejrbnA-jzni_5H9r0z6YQbPIlJD3Kyq8iev1I99OMUcTX__sfeZsxVakeyOvAbtAbkIqlC9FT9onZaAlu/s350/character_money_kouka.png" height="130" width="120" alt="moneyconvert">
                     <div>
                         <h3>Currency Converter</h3>
-                        <div id="tools">
-                            <div>
-                                Input balance: <br>
-                                Output balance: <br>
-                                Input currency:
-                            </div>
-                            <div>
-                                <input type="number" id="inputbalance" value="0">
-                                <input type="number" id="outputbalance" value="0"><br>
-                                <label for="converter"></label>
-                                <select id="converter">
-                                    <option value="usd">USD</option>
-                                    <option value="thb">THB</option>
-                                </select>
-                                <button>Convert</button>
-                            </div>
-                        </div>
+                        Input balance: <input type="number" id="inputbalance" value="0"><br>
+                        Output balance: <input type="number" id="outputbalance" value="0"><br>
+                        Input currency:
+                        <label for="converter"></label>
+                        <select id="converter">
+                            <option value="usd">USD</option>
+                            <option value="thb">THB</option>
+                        </select>
+                        <button>Convert</button>
                     </div>
                 </div>
             </div>

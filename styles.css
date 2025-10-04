@@ -22,7 +22,7 @@ nav {
     display: flex;
 }
 
-.result {
+#result {
     text-align: left;
     border-radius: 3px;
     height: 280px;
@@ -31,43 +31,28 @@ nav {
 
 #splitside {
     display: flex;
-    /* justify-content: space-between; */
-}
-
-#Overview {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .Information {
     display: flex;
+    align-items: center;
 }
+
+
 
 .balance {
     display: flex;
+    align-items: center;
 }
 
-#account {
-    display: flex;
-    justify-content: space-between;
-
-}
-#inputbalance {
-    display: flex;
-    justify-content: space-between;
-
-}
 
 .operation {
     display: flex;
+    align-items: center;
 }
 
 .textTools {
     display: flex;
-}
-
-#tools {
-    display: flex;
+    align-items: center;
 }
 
