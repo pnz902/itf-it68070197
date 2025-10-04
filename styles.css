@@ -1,6 +1,7 @@
 body {
-font-family: "Space Grotesk", sans-serif;
-  font-optical-sizing: auto;
+    margin: 0px 0px 10px 0px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
 }
 
 nav {
@@ -8,9 +9,53 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-
-body {
-    margin: 0;
+.bank {
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+.Welcomepage {
+    display: flex;
+}
+
+.result {
+    text-align: left;
+    border-radius: 3px;
+    height: 280px;
+    background-color: rgb(236, 236, 235);
+}
+
+#splitside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Information {
+    display: flex;
+}
+
+.balance {
+    display: flex;
+}
+
+#account {
+    justify-content: space-between;
+    align-items: center;
+}
+#cash {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.operation {
+    display: flex;
+}
+
+.textTools {
+    display: flex;
+}
+

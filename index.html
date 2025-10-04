@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ITF Bank</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +15,77 @@
         <h2>ITF Website</h2>
         <p>Week 14</p>
     </nav>
-    <img src="https://emojiisland.com/cdn/shop/products/Money_Face_Emoji_b26670f3-2d57-42f5-9003-f1a1ee3257c6_large.png?v=1571606036" width="96" alt="needmoney">
-    <h2>ITF Simple Bank</h2>
-    <hr>
-    <h3>Account Overview</h3>
-    <h4>Account Information</h4>
-    Name: Ananya Yongda <br>
-    Type: Saving Account
-    <h3>Balance Information</h3>
-    <div>
-        Current account <input type="number" id="account" value="0"><br>
-        Balance: <br>
-        Current cash <input type="number" id="cash" value="0"><br>
-        Balance: <br>
-        <button onclick="balance()">Change</button>
+    <div class="Welcomepage">
+        <img src="https://lh3.googleusercontent.com/proxy/4rJ0KRfWatPCVsL0JC_6QGHvkLOf11tiVwJMyZOVjWGoGM2FiSf0OaSNhQDBN6bW4WdCLlIJYNtH6rZ7gPGSQLqEO1vmjRdY87f6Ocz-88r3xBoCG_-SUcgPh9-VGIfOaQ" width="127" alt="money">
+        <div>
+            <h2>ITF Simple Bank</h2>
+            Welcome to my first HTML + CSS + JS website!
+        </div>
+    </div>
+    <div class="bank">
+        <hr>
+        <div class="result">
+            result()
+        </div>
+        <div id="splitside">
+            <div>
+                <h3>Account Overview</h3>
+                <div class="Information">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKIGkR0NAsKhA679VI-_AHno_N3kOZwDEDErKUvypLVOHeDP4mSJAL1BjcGdpQUT3entVehgWv5XUgqmaCT0Bk6JAxMC0KLDQ8ro14IqpaQVGADgeXzmKsvaKYorWY3JtENTkKNC1xaoD4/s800/business_woman1_1_smile.png" width="120" alt="person">
+                    <div id="textinform">
+                        <h4>Account Information</h4>
+                        Name: Ananya Yongda <br>
+                        Type: Saving Account
+                    </div>
+                </div>
+                <div class="balance">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo5bBmkTsI2v8TNQbb4_Z9iSWzDpHPZJjw_-tJs4zFrcmG-5lkLiuPoP1eievQ-vl9wyiD1cYGO2PFdcpbA-29q1wzJbyNmEACkAFI1eHxWIQnxGahJqv1nKMRl5Y9RdI-uVXBqUbYkPN1/s400/money_saifu_woman.png" width="120" alt="bankbalance">
+                    <div id="textbalance">
+                        <h3>Balance Information</h3>
+                        <div id="account">
+                            Current account
+                            <input type="number" id="account" value="0"><br>
+                        </div>
+                        Balance: <br>
+                        <div id="cash">
+                            Current cash
+                            <input type="number" id="cash" value="0"><br>
+                        </div>
+                        Balance: <br>
+                        <button onclick="balance()">Change</button>
+                    </div>
+                </div>
+                <div class="operation">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5aammkcJH67YB6Q1wUTxsaR9rPQ-GODVOJ3ekja8sEOvVe60xJ981bKVyJNmU7QG1Ez7M6mV5KhnXpURXnvq4GyTJPj8XBAGzsUSlcZJMAJrErdXqodhBjAOdfXeQFmuO6N7rkhF5kB6l/s400/money_saifu_kara_woman.png" width="120" alt="bankoperate">
+                    <div id="textoperation">
+                        <h3>Bank Operation</h3>
+                        <label for="bank-operation"></label>
+                        <select id="bank-options">
+                            <option value="Deposit">Deposit</option>
+                            <option value="Withdraw">Withdraw</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Financial Tools</h3>
+                <div class="textTools">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9GySEgjFM17HqeSZ1x2yJ1YtuhgeBicuB9gOg3pt1W146NSd_qq0XNgWr36RejrbnA-jzni_5H9r0z6YQbPIlJD3Kyq8iev1I99OMUcTX__sfeZsxVakeyOvAbtAbkIqlC9FT9onZaAlu/s350/character_money_kouka.png" height="130" width="120" alt="moneyconvert">
+                    <div>
+                        <h3>Currency Converter</h3>
+                        Input balance: <input type="number" id="inputbalance" value="0"><br>
+                        Output balance: <input type="number" id="outputbalance" value="0"><br>
+                        Input currency:
+                        <label for="converter"></label>
+                        <select id="converter">
+                            <option value="usd">USD</option>
+                            <option value="thb">THB</option>
+                        </select>
+                        <button>Convert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
