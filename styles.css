@@ -33,23 +33,15 @@ nav {
     display: flex;
 }
 
-.Information {
+h3 {
+    margin-block-end: 1px;
+}
+
+.leftside {
     display: flex;
     align-items: center;
 }
 
-
-
-.balance {
-    display: flex;
-    align-items: center;
-}
-
-
-.operation {
-    display: flex;
-    align-items: center;
-}
 
 .textTools {
     display: flex;

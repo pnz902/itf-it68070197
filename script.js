@@ -1,31 +1,32 @@
 const account = document.getElementById("account")
 const cash = document.getElementById("cash")
-const operate = document.getElementById("bank-operations")
-const money = document.getElementById("money")
+let result = document.getElementById("result")
 let count = 0
 
 function change() {
-    account.value = Number(account.value)
-    cash.value = Number(cash.value)
+    count = Number(count) + 1
+    result.innerHTML = count + ", Current account balance: " + account.value +", Current cash balance: " + cash.value
 }
 
 function showresult() {
-    count = Number(count) + 1
-    if (operate == 'Deposit'){
-        if (money <= cash){
-            account.value = Number(account.value) + Number(money)
-            cash.value = Number(cash.value) - Number(money)
-            document.getElementById("result").innerHTML = ("%d, Current account balance: %d, Current cash balance: %d",count,account,cash)
+    const operate = document.getElementById("bankoperations")
+    const money = document.getElementById("money")
+    count ++
+    if (operate.value == 'Deposit'){
+        if (money.value <= cash.value){
+            account.value = Number(account.value) + Number(money.value)
+            cash.value = Number(cash.value) - Number(money.value)
+            result.innerHTML = count + ", Current account balance: " + account.value + ", Current cash balance: " + cash.value
         }else {
-            document.getElementById("result").innerHTML = ("%d, Couldn't deposit entered balance. (Insufficient cash balance)",count)
+            result.innerHTML = count + ", Couldn't deposit entered balance. (Insufficient cash balance)"
         }
     }else {
-        if (money <= account){
-            cash.value = Number(cash.value) + Number(money)
-            account.value = Number(account.value) - Number(money)
-            document.getElementById("result").innerHTML = ("%d, Current account balance: %d, Current cash balance: %d",count,account,cash)
+        if (money.value <= account.value){
+            cash.value = Number(cash.value) + Number(money.value)
+            account.value = Number(account.value) - Number(money.value)
+            result.innerHTML = count + ", Current account balance: " + account.value + ", Current cash balance: " + cash.value
         }else {
-            document.getElementById("result").innerHTML = ("%d, Couldn't withdraw entered balance. (Insufficient account balance)",count)
+            result.innerHTML = count + ", Couldn't deposit entered balance. (Insufficient cash balance)"
         }
     }
 }
