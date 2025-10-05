@@ -2,7 +2,6 @@ const account = document.getElementById("account")
 const cash = document.getElementById("cash")
 const result = document.getElementById("result")
 let count = 0
-let resulttext = document.createElement('textarea')
 
 function change() {
     count = Number(count) + 1
