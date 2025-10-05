@@ -1,11 +1,16 @@
 const account = document.getElementById("account")
 const cash = document.getElementById("cash")
-let result = document.getElementById("result")
+const result = document.getElementById("result")
 let count = 0
+let resulttext = document.createElement('textarea')
 
 function change() {
     count = Number(count) + 1
-    result.innerHTML = count + ", Current account balance: " + account.value +", Current cash balance: " + cash.value
+    if (result.value != ""){
+        result.value = (count + ", Current account balance: " + account.value + ", Current cash balance: " + cash.value + "\n") + result.value
+    }else{
+        result.value = (count + ", Current account balance: " + account.value + ", Current cash balance: " + cash.value)
+    }
 }
 
 function showresult() {
@@ -13,20 +18,20 @@ function showresult() {
     const money = document.getElementById("money")
     count ++
     if (operate.value == 'Deposit'){
-        if (money.value <= cash.value){
+        if (Number(money.value) <= Number(cash.value)){
             account.value = Number(account.value) + Number(money.value)
             cash.value = Number(cash.value) - Number(money.value)
-            result.innerHTML = count + ", Current account balance: " + account.value + ", Current cash balance: " + cash.value
+            result.value = (count + ", Current account balance: " + account.value + ", Current cash balance: " + cash.value + "\n") + result.value
         }else {
-            result.innerHTML = count + ", Couldn't deposit entered balance. (Insufficient cash balance)"
+            result.value =  count + ", Couldn't deposit entered balance. (Insufficient cash balance)" + "\n" + result.value}
         }
-    }else {
-        if (money.value <= account.value){
+    else{
+        if (Number(money.value) <= Number(account.value)){
             cash.value = Number(cash.value) + Number(money.value)
             account.value = Number(account.value) - Number(money.value)
-            result.innerHTML = count + ", Current account balance: " + account.value + ", Current cash balance: " + cash.value
+            result.value = (count + ", Current account balance: " + account.value + ", Current cash balance: " + cash.value + "\n") + result.value
         }else {
-            result.innerHTML = count + ", Couldn't deposit entered balance. (Insufficient cash balance)"
+            result.value = count + ", Couldn't withdraw entered balance. (Insufficient account balance)" + "\n" + result.value
         }
     }
 }
