@@ -16,9 +16,9 @@
         <p>Week 14</p>
     </nav>
     <div class="Welcomepage">
-        <img src="icon/money.png" width="127" alt="money">
+        <img src="icon/money.png" width="150" alt="money">
         <div>
-            <h2>ITF Simple Bank</h2>
+            <h2 id="welcometext">ITF Simple Bank</h2>
             Welcome to my first HTML + CSS + JS website!
         </div>
     </div>
@@ -29,7 +29,7 @@
             <div class="left">
                 <h2>Account Overview</h2>
                 <div id="leftside">
-                    <img src="icon/icon_business_woman05.png" height="115" width="110" alt="person">
+                    <img src="icon/icon_business_woman05.png" height="125" width="120" alt="person">
                     <div id="textinform">
                         <h3>Account Information</h3>
                         Name: Ananya Yongda <br>
@@ -38,26 +38,32 @@
                 </div>
                 <div id="leftside">
                     <div id="balancepic">
-                        <img src="icon/money_kinyu_hikishime.png"  height="115" width="110" alt="bankbalance">
+                        <img src="icon/money_kinyu_hikishime.png"  height="125" width="120" alt="bankbalance">
                     </div>
                     <div id="textbalance">
                         <h3>Balance Information</h3>
-                        Current account <input type="number" id="account" value="0"><br>
-                        Balance: <br>
-                        Current cash <input type="number" id="cash" value="0"><br>
-                        Balance: <br>
+                        <div id="input">
+                            <div>
+                                Current account Balance:&nbsp; <br>
+                                Current cash Balance:
+                            </div>
+                            <div>
+                                <input type="number" id="account" value="0"><br>
+                                <input type="number" id="cash" value="0"><br>
+                            </div>
+                        </div>
                         <button onclick="change()">Change</button>
                     </div>
                 </div>
                 <div id="leftside">
-                    <img src="icon/money_kinyu_kanwa.png" height="115" width="110" alt="bankoperate">
+                    <img src="icon/money_kinyu_kanwa.png" height="125" width="120" alt="bankoperate">
                     <div id="textoperation">
                         <h3>Bank Operation</h3>
                         <select id="bankoperations">
                             <option value="Deposit">Deposit</option>
                             <option value="Withdraw">Withdraw</option>
                         </select>
-                        <input type="number" id="money" value="0"><br>
+                        <input type="number" id="money" value="0">
                         <button onclick="showresult()">Proceed</button>
                     </div>
                 </div>
@@ -65,13 +71,20 @@
             <div>
                 <h2>Financial Tools</h2>
                 <div class="textTools">
-                    <img src="icon/coin_kinka.png" height="115" width="110" alt="coin">
+                    <img src="icon/coin_kinka.png" height="125" width="120" alt="coin">
                     <div>
                         <h3>Currency Converter</h3>
-                        Input balance: <input type="number" id="inputbalance" value="0"><br>
-                        Output balance: <input type="number" id="outputbalance" value="0"><br>
+                        <div id="input">
+                            <div>
+                                Input balance: <br>
+                                Output balance:&nbsp;
+                            </div>
+                            <div>
+                                <input type="number" id="inputbalance" value="0"><br>
+                                <input type="number" id="outputbalance" value="0">
+                            </div>
+                        </div>
                         Input currency:
-                        <label for="converter"></label>
                         <select id="converter">
                             <option value="usd">USD</option>
                             <option value="thb">THB</option>
